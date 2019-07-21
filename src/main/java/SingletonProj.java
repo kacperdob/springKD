@@ -1,13 +1,13 @@
-public class IntegerMaster {
+public class SingletonProj {
     private int firstInteger;
     private int secondInteger;
 
-    public IntegerMaster(int firstInteger, int secondInteger) {
+    public SingletonProj(int firstInteger, int secondInteger) {
         this.firstInteger = firstInteger;
         this.secondInteger = secondInteger;
     }
+    public SingletonProj(){
 
-    public IntegerMaster() {
     }
 
     public int getFirstInteger() {
@@ -29,7 +29,6 @@ public class IntegerMaster {
     public void addInteger(int a, int b) {
         int c;
         c = a + b;
-        System.out.println("Wynik dodawania to: " + c);
+        System.out.println("Wynik dodawania (singleton) to: " + c);
     }
-
 }

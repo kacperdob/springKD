@@ -12,4 +12,6 @@
         <property name="firstInteger" value="100"/>
         <property name="secondInteger" value="50"/>
     </bean>
+    <bean id="singletonProj" class="SingletonProj" scope="prototype">
+    </bean>
 </beans>
