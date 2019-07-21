@@ -1,18 +1,19 @@
-public class BeamTemplate {
+public class BeanTemplate {
     private String message1;
     private String message2;
     private String message3;
 
-    public BeamTemplate(){
+    public BeanTemplate(){
     }
 
-    public BeamTemplate(String message1, String message2, String message3) {
+    public BeanTemplate(String message1, String message2, String message3) {
         this.message1 = message1;
         this.message2 = message2;
         this.message3 = message3;
     }
 
     public String getMessage1() {
+        System.out.println(message1);
         return message1;
     }
 
@@ -21,6 +22,7 @@ public class BeamTemplate {
     }
 
     public String getMessage2() {
+        System.out.println(message2);
         return message2;
     }
 
@@ -29,6 +31,7 @@ public class BeamTemplate {
     }
 
     public String getMessage3() {
+        System.out.println(message3);
         return message3;
     }
 

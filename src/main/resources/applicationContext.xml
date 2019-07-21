@@ -14,4 +14,57 @@
     </bean>
     <bean id="singletonProj" class="SingletonProj" scope="prototype">
     </bean>
+    <bean id="initDestroy" class="InitDestroy" init-method="init" destroy-method="destroy">
+        <property name="message" value="Hello! :P"></property>
+    </bean>
+    <bean id="beanTemplate" abstract="true">
+        <property name = "message1" value = "Hello World template!"/>
+        <property name = "message2" value = "Hello World template 2!"/>
+        <property name = "message3" value = "Hello World template 3!"/>
+    </bean>
+    <bean id="beanForTemplate" class="BeanTemplate" parent="beanTemplate">
+        <property name = "message1" value = "Hello World my Own!"/>
+        <property name = "message3" value = "Hello World my Own 3!"/>
+    </bean>
+
+    <bean id="computer" class="Computer">
+        <property name="hardDisc">
+            <bean id="hardDisc" class="HardDisc">
+            </bean>
+        </property>
+    </bean>
+    <bean id="car" class="Car">
+        <constructor-arg index="0" ref="engine"/>
+    </bean>
+    <bean id="engine" class="Engine">
+
+    </bean>
+
+    <bean id="collection" class="Collection">
+        <property name="humanList">
+            <list>
+                <value>Adam</value>
+                <value>Piotr</value>
+                <value>Pawel</value>
+                <value>Pawel</value>
+            </list>
+        </property>
+        <property name="humanSet">
+            <set>
+                <value>Adam</value>
+                <value>Piotr</value>
+                <value>Pawel</value>
+                <value>Pawel</value>
+            </set>
+        </property>
+        <property name="humanMap">
+            <map>
+                <entry key="1" value="Adam"/>
+                <entry key="2" value="Piotr"/>
+                <entry key="3" value="Pawel"/>
+                <entry key="4" value="Pawel"/>
+            </map>
+        </property>
+    </bean>
+
 </beans>

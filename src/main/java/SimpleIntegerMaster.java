@@ -4,17 +4,28 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class SimpleIntegerMaster {
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
-        IntegerMaster obj = (IntegerMaster) context.getBean("integerMaster");
-        obj.setFirstInteger(300);
-        obj.getFirstInteger();
+//        IntegerMaster obj = (IntegerMaster) context.getBean("integerMaster");
+//        obj.setFirstInteger(300);
+//        obj.getFirstInteger();
+//
+//        IntegerMaster obj2 = (IntegerMaster) context.getBean("integerMaster");
+//        obj2.addInteger(obj.getFirstInteger(), obj.getSecondInteger());
+//
+//        SingletonProj obj3 = (SingletonProj) context.getBean("singletonProj");
+//        obj3.setFirstInteger(30);
+//        obj3.setSecondInteger(43);
+//
+//        obj3.addInteger(obj3.getFirstInteger(), obj3.getSecondInteger());
 
-        IntegerMaster obj2 = (IntegerMaster) context.getBean("integerMaster");
-        obj2.addInteger(obj.getFirstInteger(), obj.getSecondInteger());
+//        InitDestroy objID = (InitDestroy) context.getBean("initDestroy");
+//        ((ClassPathXmlApplicationContext) context).close();
 
-        SingletonProj obj3 = (SingletonProj) context.getBean("singletonProj");
-        obj3.setFirstInteger(30);
-        obj3.setSecondInteger(43);
+//        BeanTemplate objBean = (BeanTemplate) context.getBean("BeanTemplate");
+//objBean.getMessage1();
+//objBean.getMessage2();
+//objBean.getMessage3();
 
-        obj3.addInteger(obj3.getFirstInteger(), obj3.getSecondInteger());
+
+
     }
 }
