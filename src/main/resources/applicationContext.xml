@@ -8,4 +8,8 @@
         <property name="message" value="ABC!"/>
         <property name="message2" value="ABC2!"/>
     </bean>
+    <bean id="integerMaster" class="IntegerMaster" scope="prototype">
+        <property name="firstInteger" value="100"/>
+        <property name="secondInteger" value="50"/>
+    </bean>
 </beans>
