@@ -16,5 +16,28 @@ import org.springframework.context.annotation.Configuration;
     public Chair chair(){
             return new Chair();
         }
-
+        @Bean
+    public CRefreshEvent cRefreshEvent(){
+            return new CRefreshEvent();
+        }
+    @Bean
+    public CStartEventHandler cStartEventHandler(){
+        return new CStartEventHandler();
     }
+    // do zmiany
+//    @Bean
+//    public CStopEventHandler cStopEventHandler(){
+//        return new CStopEventHandler();
+//    }
+    @Bean
+    public CustomEventPublisher customEventPublisher(){
+        return new CustomEventPublisher();
+    }
+//    // do zmiany
+//    @Bean
+//    public CustomEventHandler customEventHandler(){
+//        return new CustomEventHandler();
+//    }
+}
+
+

@@ -22,5 +22,7 @@ public class Room {
         Room obj = (Room) ctx.getBean("room");
         obj.chair.setMaterial("wood");
         System.out.println(obj.chair.getMaterial());
+
+
     }
 }
